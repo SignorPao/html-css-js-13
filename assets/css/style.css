@@ -1,3 +1,68 @@
-body {
-  font-family: "Noto Sans JP", sans-serif;
+@import url(/assets/css/reset.css);
+
+/* 
+==============================
+  VARIABLES
+==============================
+*/
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --soft-black: #191919;
+  --gray: #f2f2f2;
+  --primary: #ffcc00;
+  /* Fonts & Typography */
+  --font: "Noto Sans JP", "Verdana", sans-serif;
+  --font-size-default: 1.6rem;
+  --font-weight-default: 400;
+  --line-height-default: 1.5;
+  /* Length values */
+  --max-width: 1140px;
+  --indent-default: 16px;
+  /* Other values */
+  --transition: 300ms ease-in-out;
 }
+
+/* 
+==============================
+  BASE
+==============================
+*/
+body {
+  font-family: var(--font);
+  color: var(--black);
+  font-size: var(--font-size-default);
+  font-weight: var(--font-weight-default);
+  line-height: var(--line-height-default);
+}
+
+/* 
+==============================
+  REUSABLE CLASSES
+==============================
+*/
+
+/* 
+==============================
+  HEADER
+==============================
+*/
+
+/* 
+==============================
+  MAIN
+==============================
+*/
+
+/* 
+==============================
+FOOTER
+==============================
+*/
+
+/* 
+==============================
+  MEDIA QUERIES
+==============================
+*/
