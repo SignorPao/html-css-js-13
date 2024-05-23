@@ -59,12 +59,42 @@
 
     <main>
       <section class="banner__section">
-        <div class="banner__image"></div>
+        <div class="banner__image">
+          <picture>
+            <source
+              media="(min-width:767px)"
+              srcset="/assets/images/banner.webp"
+            />
+            <source
+              media="(max-width:768px)"
+              srcset="/assets/images/banner__mobile.webp"
+            />
+            <img src="/assets/images/banner.webp" alt="Delivery plane" />
+          </picture>
+        </div>
 
-        <div class="banner__cta"></div>
-
-        <div class="banner__text"></div>
+        <div class="banner__cta">
+          <h1>Deutsche Post's products and services</h1>
+          <p>Find out more about Deutsche Post's products and services.</p>
+          <a href="#!">Prices of domestic mail</a>
+        </div>
       </section>
+
+      <section class="under__banner-text wrapper">
+        <p>
+          Deutsche Post delivers mail and parcel in Germany and the world. It is
+          an expert provider of dialogue marketing and press distribution
+          services as well as corporate communications solutions. Deutsche Post
+          is a corporate brand of the mail and logistics Group DHL Group.
+        </p>
+        <a href="#!">More about DHL Group</a>
+      </section>
+
+      <section class="information">current information</section>
+
+      <section class="find">find out more</section>
+
+      <section class="six__cards">six cards</section>
     </main>
 
     <footer>footer</footer>
