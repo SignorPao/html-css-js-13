@@ -11,6 +11,7 @@
   --black: #000000;
   --soft-black: #191919;
   --black-hover: #444444;
+  --black-hover-2: #818181;
   --gray: #f2f2f2;
   --primary: #ffcc00;
   /* Fonts & Typography */
@@ -128,6 +129,19 @@ section + section {
   letter-spacing: 0.2px;
 }
 /* end banner */
+
+/* under banner text */
+.under__banner-text a {
+  margin-block-start: calc(var(--indent-default) * 1.2);
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  transition: color var(--transition);
+}
+
+.under__banner-text a:hover {
+  color: var(--black-hover-2);
+}
+/* end under banner text */
 
 /* 
 ==============================
