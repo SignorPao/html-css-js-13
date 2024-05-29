@@ -143,6 +143,47 @@ section + section {
 }
 /* end under banner text */
 
+/* information */
+.information {
+  background-color: var(--soft-black);
+  color: var(--white);
+  padding-block: calc(var(--indent-default) * 3);
+}
+
+.information__container {
+}
+
+.information__container h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  margin-block-end: calc(var(--indent-default) / 2);
+}
+
+.information__articles {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--indent-default) * 2);
+}
+
+.information__image {
+}
+
+.information__txt {
+}
+
+.information__txt h3 {
+  font-size: 19px;
+  font-weight: var(--font-weight-bold);
+  margin-block-end: calc(var(--indent-default) / 3);
+}
+
+.information__txt a {
+  font-size: 16px;
+  font-weight: var(--font-weight-bold);
+  margin-block-start: var(--indent-default);
+}
+/* end information */
+
 /* 
 ==============================
 FOOTER
