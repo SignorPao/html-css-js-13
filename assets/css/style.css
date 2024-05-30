@@ -162,10 +162,18 @@ section + section {
 .information__articles {
   display: flex;
   flex-direction: column;
-  gap: calc(var(--indent-default) * 2);
+  gap: calc(var(--indent-default) * 3);
+}
+
+.information__articles article {
+  display: flex;
+  gap: calc((var(--indent-default) / 1.2));
 }
 
 .information__image {
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
 }
 
 .information__txt {
