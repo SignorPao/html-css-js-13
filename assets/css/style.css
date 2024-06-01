@@ -75,6 +75,18 @@ body {
   background-color: var(--black-hover);
 }
 
+.h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  margin-block-end: calc(var(--indent-default) / 2);
+}
+
+.h3 {
+  font-size: 19px;
+  font-weight: var(--font-weight-bold);
+  margin-block-end: calc(var(--indent-default) / 3);
+}
+
 /* 
 ==============================
   HEADER
@@ -150,12 +162,6 @@ section + section {
   padding-block: calc(var(--indent-default) * 3);
 }
 
-.information__container h2 {
-  font-size: 24px;
-  font-weight: var(--font-weight-bold);
-  margin-block-end: calc(var(--indent-default) / 2);
-}
-
 .information__articles {
   display: flex;
   flex-direction: column;
@@ -173,11 +179,11 @@ section + section {
   flex-shrink: 0;
 }
 
-.information__txt h3 {
+/* .information__txt h3 {
   font-size: 19px;
   font-weight: var(--font-weight-bold);
   margin-block-end: calc(var(--indent-default) / 3);
-}
+} */
 
 .information__txt a {
   font-size: 16px;
@@ -200,6 +206,17 @@ section + section {
   transform: rotate(-45deg);
 }
 /* end information */
+
+/* find */
+.find {
+}
+
+.find__articles {
+}
+
+.button {
+}
+/* end find */
 
 /* 
 ==============================
@@ -225,6 +242,10 @@ FOOTER
 
   .wrapper {
     padding-inline: 0;
+  }
+
+  .h2 {
+    margin-block-end: calc(var(--indent-default) * 1.5);
   }
 
   .banner__section {
@@ -270,10 +291,6 @@ FOOTER
     line-height: 34px;
   }
 
-  .information__container h2 {
-    margin-block-end: calc(var(--indent-default) * 1.5);
-  }
-
   .information__articles {
     flex-direction: row;
   }
@@ -284,6 +301,14 @@ FOOTER
     --max-width: 960px;
   }
 
+  .h2 {
+    font-size: 28px;
+  }
+
+  .h3 {
+    font-size: 22px;
+  }
+
   header {
     height: 64px;
   }
@@ -292,19 +317,15 @@ FOOTER
     width: 64px;
     height: 64px;
   }
-
-  .information__container h2 {
-    font-size: 28px;
-  }
-
-  .information__txt h3 {
-    font-size: 22px;
-  }
 }
 
 @media (min-width: 1200px) {
   :root {
     --max-width: 1140px;
+  }
+
+  .h2 {
+    font-size: 30px;
   }
 
   .banner__image {
@@ -313,10 +334,5 @@ FOOTER
 
   .banner__cta {
     width: 35%;
-  }
-
-  
-  .information__container h2 {
-    font-size: 30px;
   }
 }
