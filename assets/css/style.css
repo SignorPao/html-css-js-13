@@ -348,6 +348,14 @@ FOOTER
   }
 
   .banner__cta {
+    width: 25%;
+  }
+
+  .find__articles{
+    justify-content: space-around;
+  }
+
+  .find__articles article{
     width: 35%;
   }
 }
