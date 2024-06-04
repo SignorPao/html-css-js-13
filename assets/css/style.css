@@ -81,7 +81,13 @@ body {
   margin-block-end: calc(var(--indent-default) / 2);
 }
 
-.h3 {
+.h3{
+  font-size: 21px;
+  font-weight: var(--font-weight-bold);
+  margin-block-end: calc(var(--indent-default) / 1.5);
+}
+
+.h4 {
   font-size: 19px;
   font-weight: var(--font-weight-bold);
   margin-block-end: calc(var(--indent-default) / 3);
@@ -217,6 +223,48 @@ section + section {
 }
 /* end find */
 
+/* six cards */
+.six__cards{
+
+}
+.six__cards-container{
+
+}
+.wrapper{
+
+}
+.cards__container{
+
+}
+.top__cards{
+
+}
+.h3{
+
+}
+.six__cards-content{
+
+}
+.six__cards-text{
+
+}
+.six__cards-image{
+
+}
+.bottom__cards{
+
+}
+.bottom__card-text{
+
+}
+.h4{
+
+}
+.bottom__card-image{
+
+}
+/* end six cards */
+
 /* 
 ==============================
 FOOTER
@@ -316,7 +364,7 @@ FOOTER
     font-size: 28px;
   }
 
-  .h3 {
+  .h4 {
     font-size: 22px;
   }
 
