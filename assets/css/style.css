@@ -13,6 +13,7 @@
   --black-hover: #444444;
   --black-hover-2: #818181;
   --gray: #f2f2f2;
+  --gray-2: #c4c4c4;
   --primary: #ffcc00;
   /* Fonts & Typography */
   --font: "Noto Sans JP", "Verdana", sans-serif;
@@ -81,7 +82,7 @@ body {
   margin-block-end: calc(var(--indent-default) / 2);
 }
 
-.h3{
+.h3 {
   font-size: 21px;
   font-weight: var(--font-weight-bold);
   margin-block-end: calc(var(--indent-default) / 1.5);
@@ -91,6 +92,16 @@ body {
   font-size: 19px;
   font-weight: var(--font-weight-bold);
   margin-block-end: calc(var(--indent-default) / 3);
+}
+
+.link__button {
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  transition: color var(--transition);
+}
+
+.link__button:hover {
+  color: var(--black-hover-2);
 }
 
 /* 
@@ -151,13 +162,6 @@ section + section {
 /* under banner text */
 .under__banner-text a {
   margin-block-start: calc(var(--indent-default) * 1.2);
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
-  transition: color var(--transition);
-}
-
-.under__banner-text a:hover {
-  color: var(--black-hover-2);
 }
 /* end under banner text */
 
@@ -224,44 +228,62 @@ section + section {
 /* end find */
 
 /* six cards */
-.six__cards{
-
+.six__cards {
+  background-color: var(--gray);
 }
-.six__cards-container{
 
+.six__cards-container {
+  padding-block: calc(var(--indent-default) * 2);
 }
-.wrapper{
 
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--indent-default) * 3);
 }
-.cards__container{
 
+.top__cards {
+  margin-block-end: calc(var(--indent-default) * 2);
 }
-.top__cards{
 
+.six__cards-content {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--indent-default) * 2);
 }
-.h3{
 
+.six__cards-text {
+  flex: 50%;
 }
-.six__cards-content{
 
+.six__cards-text a {
+  margin-block-start: calc(var(--indent-default) * 1.5);
 }
-.six__cards-text{
 
+.six__cards-image {
+  flex: 50%;
 }
-.six__cards-image{
-
+.bottom__cards {
+  border-block-start: thin solid var(--gray-2);
+  padding-block-start: calc(var(--indent-default) * 2);
 }
-.bottom__cards{
 
+.bottom__cards article:not(:last-child) {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--indent-default);
 }
-.bottom__card-text{
 
+.bottom__card-text {
+  flex: 65%;
 }
-.h4{
 
+.bottom__card-text a {
+  margin-block-start: var(--indent-default);
 }
-.bottom__card-image{
 
+.bottom__card-image {
+  flex: 35%;
 }
 /* end six cards */
 
@@ -399,11 +421,11 @@ FOOTER
     width: 25%;
   }
 
-  .find__articles{
+  .find__articles {
     justify-content: space-around;
   }
 
-  .find__articles article{
+  .find__articles article {
     width: 35%;
   }
 }
