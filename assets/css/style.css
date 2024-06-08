@@ -326,6 +326,55 @@ section + section {
 FOOTER
 ==============================
 */
+footer {
+  padding-block: calc(var(--indent-default) * 2);
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--indent-default) * 3);
+}
+
+.footer__top li + li {
+  margin-block-start: calc(var(--indent-default) / 2);
+}
+
+.footer__top a {
+  position: relative;
+  padding-inline-start: 16px;
+  transition: all var(--transition-fast);
+}
+
+.footer__top a:hover {
+  text-decoration: underline;
+  color: var(--black-hover-2);
+}
+
+.footer__top a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+  border: medium solid var(--black);
+  border-width: 0 1.5px 1.5px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.footer__bottom {
+  margin-block-start: calc(var(--indent-default) * 4);
+  padding-block-start: var(--indent-default);
+  border-block-start: thin solid var(--gray-2);
+}
+
+.footer__bottom-left {
+}
+.footer__bottom-right {
+}
+.footer__logo {
+}
 
 /* 
 ==============================
